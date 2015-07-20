@@ -1,0 +1,32 @@
+<script src="https://sdk.amazonaws.com/js/aws-sdk-2.1.28.min.js"></script>
+
+<script>
+var lambda = new AWS.Lambda({
+	region : "us-east-1",
+	accessKeyId: "AKIAIOJZDIE7F3NFUZLA",
+	secretAccessKey: "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"
+});
+
+var params = {
+	"phoneNumber" : "4155551212",
+	"session": "ABCDEFGHIJKL"
+};
+lambda.invoke({
+	FunctionName: "digitsLogin",
+	Payload: JSON.stringify(params)
+}, function(err, data){
+	if (!err){
+		var result = JSON.parse(data.Payload);
+		console.log(result);
+	} else {
+		console.log("err:" + err);
+	}
+});
+
+</script>
+
+<body>
+
+Test Lambda Client.
+
+</body>

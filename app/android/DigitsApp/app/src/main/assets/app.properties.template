@@ -1,0 +1,16 @@
+# Get your Twitter key/secret by following the below steps:
+#
+#  1.) Download and install Fabric (https://fabric.io)
+#  2.) Install the Digits Kit into your Android app
+#  3.) Log into your Fabric dashboard (https://fabric.io/dashboard)
+#  4.) Select your app from the top drop-down and then click on the Digits icon to the left
+#  5.) Your key/secret should appear on the page to the right
+TWITTER_KEY=YOUR_TWITTER_KEY_HERE
+TWITTER_SECRET=YOUR_TWITTER_SECRET_HERE
+
+# Get your AWS identity pool by following the below steps:
+#
+#  1.) Log into the Amazon Cognito console (https://console.aws.amazon.com/cognito)
+#  2.) Click on "Create new Identity pool"
+#  3.) Specify a name for the pool and also specify your Twitter key/secret
+AWS_IDENTITY_POOL_ID=YOUR_AWS_IDENTITY_POOL_HERE
